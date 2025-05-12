@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 ASK_PHONE, ASK_ISM, ASK_YOSHI, ASK_INGLIZ, ASK_QAYER, ASK_KIDS, ASK_MABLAG = range(7)
 
 # — BOT va Sheet sozlamalari —
-BOT_TOKEN    = "7699805832:AAH3NExsde9rXEG0Si5RlKLAwz4mrr40Rzo"
+BOT_TOKEN    = "7699805832:AAHONDohmkHNsMuXRb2v2g_VFKoe7ypjhJ8"
 BOT_USERNAME = "KidsAcademy_Ibrat_bot"
 SHEET_ID     = "1thEJ61H9z1Qt70ye53xGOLHm5SDgLoaPQYkSsHdGqGo"
 SERVICE_FILE = "credentials.json"

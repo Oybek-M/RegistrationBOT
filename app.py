@@ -89,7 +89,7 @@ async def handle_phone(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["phonenumber"] = (
         contact.phone_number if contact else update.message.text
     )
-    await update.message.reply_text("1) Ismingizni qanday yozishni xohlaysiz?")
+    await update.message.reply_text("1) Ismingizni?")
     return ASK_ISM
 
 

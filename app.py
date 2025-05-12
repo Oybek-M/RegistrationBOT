@@ -89,7 +89,7 @@ async def handle_phone(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["phonenumber"] = (
         contact.phone_number if contact else update.message.text
     )
-    await update.message.reply_text("1) Ismingizni?")
+    await update.message.reply_text("1) Ismingiz?")
     return ASK_ISM
 
 
@@ -102,7 +102,7 @@ async def handle_ism(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def handle_yoshi(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["farzandingiz_yoshi"] = update.message.text
-    await update.message.reply_text("3) Ingliz tili darajangiz?")
+    await update.message.reply_text("3) Ingliz tili darajasi?")
     return ASK_INGLIZ
 
 

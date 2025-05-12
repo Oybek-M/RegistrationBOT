@@ -89,38 +89,38 @@ async def handle_phone(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["phonenumber"] = (
         contact.phone_number if contact else update.message.text
     )
-    await update.message.reply_text("1) Ismingiz?")
+    await update.message.reply_text("1. Ismingiz")
     return ASK_ISM
 
 
 async def handle_ism(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Bu “ismingiz” ustuni uchun userning javobi
     context.user_data["ismingiz"] = update.message.text
-    await update.message.reply_text("2) Farzandingizning yoshi?")
+    await update.message.reply_text("2. Farzandingiz yoshi")
     return ASK_YOSHI
 
 
 async def handle_yoshi(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["farzandingiz_yoshi"] = update.message.text
-    await update.message.reply_text("3) Ingliz tili darajasi?")
+    await update.message.reply_text("3. Farzandingiznining ingliz tili darajasi ")
     return ASK_INGLIZ
 
 
 async def handle_ingliz(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["ingliz_tili_darajasi"] = update.message.text
-    await update.message.reply_text("4) Qayerda yashaysiz?")
+    await update.message.reply_text("4. Qayerda yashaysiz?")
     return ASK_QAYER
 
 
 async def handle_qayer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["qayerda_yashaysiz"] = update.message.text
-    await update.message.reply_text("5) KIDS ACADEMY haqida qayerdan eshitdingiz?")
+    await update.message.reply_text("5. KIDS ACADEMY haqida qayerdan eshitdingiz?")
     return ASK_KIDS
 
 
 async def handle_kids(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["kids_academy_haqida_qayerdan_eshitdingiz"] = update.message.text
-    await update.message.reply_text("6) Farzandingiz uchun qancha mablag‘ ajrata olasiz?")
+    await update.message.reply_text("6. Farzandingiz ta'limi uchun qancha mablag' ajrata olasiz?")
     return ASK_MABLAG
 
 
